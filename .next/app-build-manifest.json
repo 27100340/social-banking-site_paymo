@@ -1,3 +1,50 @@
 {
-  "pages": {}
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-de04a870ea038eee.js",
+      "static/chunks/825c71f5-fb7cae1e6ed09cd6.js",
+      "static/chunks/255-0660d0eeaa5652bf.js",
+      "static/chunks/main-app-4f15686da43fd9d5.js",
+      "static/chunks/app/_not-found/page-99ac992706ff652e.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-de04a870ea038eee.js",
+      "static/chunks/825c71f5-fb7cae1e6ed09cd6.js",
+      "static/chunks/255-0660d0eeaa5652bf.js",
+      "static/chunks/main-app-4f15686da43fd9d5.js",
+      "static/css/d593958264039534.css",
+      "static/chunks/292-025b9e8e20bc5427.js",
+      "static/chunks/39-51db40427b0a2644.js",
+      "static/chunks/149-207d99fc4730d6f7.js",
+      "static/chunks/app/layout-cc3c1981dd8813f3.js"
+    ],
+    "/(privacy_policy)/privacy_policy/page": [
+      "static/chunks/webpack-de04a870ea038eee.js",
+      "static/chunks/825c71f5-fb7cae1e6ed09cd6.js",
+      "static/chunks/255-0660d0eeaa5652bf.js",
+      "static/chunks/main-app-4f15686da43fd9d5.js",
+      "static/chunks/292-025b9e8e20bc5427.js",
+      "static/chunks/app/(privacy_policy)/privacy_policy/page-54d7e1a0ada02375.js"
+    ],
+    "/(marketing)/page": [
+      "static/chunks/webpack-de04a870ea038eee.js",
+      "static/chunks/825c71f5-fb7cae1e6ed09cd6.js",
+      "static/chunks/255-0660d0eeaa5652bf.js",
+      "static/chunks/main-app-4f15686da43fd9d5.js",
+      "static/chunks/4918df7f-f255a0e402ed7750.js",
+      "static/chunks/8f130de0-8e1964b25387ff19.js",
+      "static/chunks/842892ce-fe337fdc75f6c700.js",
+      "static/chunks/292-025b9e8e20bc5427.js",
+      "static/chunks/39-51db40427b0a2644.js",
+      "static/chunks/554-b5f0e7d978129c74.js",
+      "static/chunks/app/(marketing)/page-3957285a74474cac.js"
+    ],
+    "/(marketing)/layout": [
+      "static/chunks/webpack-de04a870ea038eee.js",
+      "static/chunks/825c71f5-fb7cae1e6ed09cd6.js",
+      "static/chunks/255-0660d0eeaa5652bf.js",
+      "static/chunks/main-app-4f15686da43fd9d5.js",
+      "static/chunks/app/(marketing)/layout-f8b738edd3062062.js"
+    ]
+  }
 }

@@ -41,6 +41,7 @@ import { FallInPlace } from '#components/motion/fall-in-place'
 import { Testimonials } from '#components/testimonials'
 import { Em } from '#components/typography'
 import testimonials from '#data/testimonials'
+import { Header } from '#components/layout/header' // Make sure this import exists
 
 /**
  * Custom hook to track global scroll progress (from 0 to 1)
@@ -143,16 +144,19 @@ const useHeroAnimation = () => {
 
 const Home: NextPage = () => {
   return (
-    <Box position="relative">
-      {/* Background gradient and vertical animated lines */}
-      <BackgroundGradient height="100%" zIndex="-3" />
-      <BackgroundVerticalLines />
+    <>
+      <Header /> {/* Add this if not present */}
+      <Box position="relative">
+        {/* Background gradient and vertical animated lines */}
+        <BackgroundGradient height="100%" zIndex="-3" />
+        <BackgroundVerticalLines />
 
-      <HeroSection />
-      <HighlightsSection />
-      <FeaturesSection />
-      <TestimonialsSection />
-    </Box>
+        <HeroSection />
+        <HighlightsSection />
+        <FeaturesSection />
+        <TestimonialsSection />
+      </Box>
+    </>
   )
 }
 
@@ -205,7 +209,7 @@ const HeroSection: React.FC = () => {
           >
             <FallInPlace delay={0.8}>
               <ButtonGroup mt={8} spacing={6} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/apply">
+                <ButtonLink colorScheme="primary" size="lg" href="/privacy_policy">
                   Privacy Policy
                 </ButtonLink>
                 {/* ...other buttons... */}
