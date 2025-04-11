@@ -1,30 +1,25 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import '@fontsource-variable/inter'
 import { theme as baseTheme } from '@saas-ui/react'
 
 import components from './components'
 import { fontSizes } from './foundations/typography'
 
-const config = {
+const config: ThemeConfig = {
   initialColorMode: 'dark',
   useSystemColorMode: false,
 }
 
-const theme = extendTheme(
+export const theme = extendTheme(
   {
     config,
     styles: {
-      global: (props: any) => ({
+      global: {
         body: {
-          color: 'gray.900',
-          bg: 'white',
-          fontSize: 'lg',
-          _dark: {
-            color: 'white',
-            bg: 'gray.900',
-          },
+          bg: 'gray.900',
+          color: 'white',
         },
-      }),
+      },
     },
     fonts: {
       heading: 'Inter Variable, Inter, sans-serif',
