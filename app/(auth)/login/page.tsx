@@ -1,3 +1,5 @@
+'use client'
+
 import { Center } from '@chakra-ui/react'
 import { Auth } from '@saas-ui/auth'
 import { Link } from '@saas-ui/react'
@@ -19,7 +21,7 @@ const providers = {
   },
 }
 
-const Login: NextPage = () => {
+export default function LoginPage() {
   return (
     <Section height="calc(100vh - 200px)" innerWidth="container.sm">
       <BackgroundGradient zIndex="-1" />
@@ -36,5 +38,3 @@ const Login: NextPage = () => {
     </Section>
   )
 }
-
-export default Login

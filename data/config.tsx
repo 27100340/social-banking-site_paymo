@@ -8,8 +8,10 @@ import { Logo } from './logo'
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'The Artist Gram | Connect Through Art',
+    description: 'A social platform for artists to share and connect',
+    titleTemplate: '%s - The Artist Gram',
+    defaultTitle: 'The Artist Gram | Connect Through Art'
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -31,7 +33,7 @@ const siteConfig = {
     copyright: (
       <>
         Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        <Link href="">PAYMO</Link>
       </>
     ),
     links: [
@@ -50,7 +52,7 @@ const siteConfig = {
     ],
   },
   signup: {
-    title: 'Start building with Saas UI',
+    title: 'Not to be accessed- undeveloped page',
     features: [
       {
         icon: FiCheck,

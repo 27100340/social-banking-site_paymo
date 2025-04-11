@@ -1,5 +1,14 @@
-import { MarketingLayout } from '#components/layout'
+import { Metadata } from 'next'
 
-export default function Layout(props: { children: React.ReactNode }) {
-  return <MarketingLayout>{props.children}</MarketingLayout>
+export const metadata: Metadata = {
+  title: 'WYLD - The Worlds 1st Social Currency Card',
+  description: 'Encash your influence with WYLD - Earn up to 100% cashback on your purchases.',
+}
+
+export default function MarketingLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return children
 }

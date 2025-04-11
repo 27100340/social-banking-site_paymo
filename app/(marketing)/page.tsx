@@ -16,7 +16,7 @@ import {
   useClipboard,
 } from '@chakra-ui/react'
 import { Br, Link } from '@saas-ui/react'
-import type { Metadata, NextPage } from 'next'
+import type { NextPage } from 'next'
 import Image from 'next/image'
 import {
   FiArrowRight,
@@ -41,12 +41,6 @@ import { FallInPlace } from '#components/motion/fall-in-place'
 import { Testimonials } from '#components/testimonials'
 import { Em } from '#components/typography'
 import testimonials from '#data/testimonials'
-
-export const meta: Metadata = {
-  title: 'WYLD – The World’s 1st Social Currency Card',
-  description:
-    'Encash your influence with WYLD – Earn up to 100% cashback on your purchases.',
-}
 
 /**
  * Custom hook to track global scroll progress (from 0 to 1)

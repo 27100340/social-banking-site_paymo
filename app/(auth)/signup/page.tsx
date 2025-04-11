@@ -1,3 +1,5 @@
+'use client'
+
 import { Box, Center, Stack, Text } from '@chakra-ui/react'
 import { Auth } from '@saas-ui/auth'
 import { Link } from '@saas-ui/react'
@@ -23,7 +25,7 @@ const providers = {
   },
 }
 
-const Login: NextPage = () => {
+export default function SignupPage() {
   return (
     <Section height="100vh" innerWidth="container.xl">
       <BackgroundGradient
@@ -47,7 +49,7 @@ const Login: NextPage = () => {
           <Box pe="20">
             <NextLink href="/">
               <Box
-                as={siteConfig.logo}
+                // as={siteConfig.logo}
                 width="160px"
                 ms="4"
                 mb={{ base: 0, lg: 16 }}
@@ -95,5 +97,3 @@ const Login: NextPage = () => {
     </Section>
   )
 }
-
-export default Login
