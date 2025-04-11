@@ -165,8 +165,12 @@ const HeroSection: React.FC = () => {
 
   return (
     <Box position="relative" overflow="hidden">
-      <Container maxW="container.xl" pt={{ base: '120px', lg: '140px' }} pb="40">
-        <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
+      <Container maxW="container.xl" pt={{ base: '80px', lg: '140px' }} pb="40">
+        <Stack 
+          direction={{ base: 'column', lg: 'row' }} 
+          alignItems="center" 
+          spacing={{ base: 8, lg: 0 }}
+        >
           <Hero
             id="home"
             justifyContent="flex-start"
@@ -180,9 +184,10 @@ const HeroSection: React.FC = () => {
                     transition: 'transform 0.3s, opacity 0.3s',
                   }}
                   lineHeight="short"
-                  fontSize={['3xl', null, '5xl']}
+                  fontSize={['2xl', '3xl', '5xl']}
+                  textAlign={{ base: 'center', lg: 'left' }}
                 >
-                  Networth – The World’s 1st Social Currency Card
+                  Networth – The World's 1st Social Currency Card
                 </Heading>
               </FallInPlace>
             }
@@ -194,7 +199,8 @@ const HeroSection: React.FC = () => {
                     opacity: alpha,
                     transition: 'transform 0.3s, opacity 0.3s',
                   }}
-                  fontSize="xl"
+                  fontSize={{ base: "lg", lg: "xl" }}
+                  textAlign={{ base: 'center', lg: 'left' }}
                 >
                   Fuelled by Likes & Shares,
                   <Br />
@@ -202,34 +208,41 @@ const HeroSection: React.FC = () => {
                   <Em>100% cashback</Em> on your purchases.
                   <Br />
                   Live the Networth life.
-                  <Br />
                 </Text>
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <ButtonGroup mt={8} spacing={6} alignItems="center">
+              <ButtonGroup 
+                mt={8} 
+                spacing={{ base: 3, lg: 6 }} 
+                alignItems="center"
+                justifyContent={{ base: 'center', lg: 'flex-start' }}
+                width="100%"
+              >
                 <ButtonLink colorScheme="primary" size="lg" href="/privacy_policy">
                   Privacy Policy
                 </ButtonLink>
-                {/* ...other buttons... */}
               </ButtonGroup>
             </FallInPlace>
           </Hero>
+
+          {/* Modified image box for better mobile display */}
           <Box
-            height="300px"
-            position="absolute"
-            top="170px"
-            display={{ base: 'none', lg: 'block' }}
-            left={{ lg: '60%', xl: '55%' }}
-            width="80vw"
-            maxW="1100px"
-            margin="0 auto"
+            height={{ base: "200px", lg: "300px" }}
+            position={{ base: "relative", lg: "absolute" }}
+            top={{ base: "0", lg: "170px" }}
+            display="block"
+            left={{ base: "auto", lg: '60%', xl: '55%' }}
+            width={{ base: "100%", lg: "80vw" }}
+            maxW={{ base: "400px", lg: "1100px" }}
+            mx="auto"
+            my={{ base: 6, lg: 0 }}
           >
             <FallInPlace delay={1}>
               <Box 
                 overflow="hidden" 
-                height="30%" 
+                height={{ base: "100%", lg: "30%" }}
                 borderRadius="xl" 
                 style={{
                   transform: `scale(${scale}) translateY(${(1 - alpha) * 100}px)`,
@@ -242,9 +255,14 @@ const HeroSection: React.FC = () => {
                   width={800}
                   height={200}
                   alt="Networth Social Currency Card in action"
-                  quality="75"
+                  quality={75}
                   priority
-                  style={{ borderRadius: 'inherit' }}
+                  style={{ 
+                    borderRadius: 'inherit',
+                    objectFit: 'cover',
+                    width: '100%',
+                    height: '100%'
+                  }}
                 />
               </Box>
             </FallInPlace>
