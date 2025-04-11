@@ -5,12 +5,14 @@ import { theme as baseTheme } from '@saas-ui/react'
 import components from './components'
 import { fontSizes } from './foundations/typography'
 
-export const theme = extendTheme(
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+}
+
+const theme = extendTheme(
   {
-    config: {
-      initialColorMode: 'dark',
-      useSystemColorMode: false,
-    },
+    config,
     styles: {
       global: (props: any) => ({
         body: {
@@ -33,3 +35,5 @@ export const theme = extendTheme(
   },
   baseTheme,
 )
+
+export default theme
