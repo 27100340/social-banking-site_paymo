@@ -1,3 +1,4 @@
 {
+  "/(privacy_policy)/privacy_policy/page": "app/(privacy_policy)/privacy_policy/page.js",
   "/(marketing)/page": "app/(marketing)/page.js"
 }

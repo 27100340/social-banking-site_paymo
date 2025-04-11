@@ -7,6 +7,9 @@ import {
   Text,
   VStack,
   Stack,
+  UnorderedList,
+  ListItem,
+  OrderedList,
 } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import { BackgroundGradient } from '#components/gradients/background-gradient'
@@ -15,82 +18,86 @@ import { FallInPlace } from '#components/motion/fall-in-place'
 const PrivacyPolicy: NextPage = () => {
   return (
     <Box position="relative">
-      {/* Background styling */}
       <BackgroundGradient height="100%" zIndex="-3" />
-
       <Container maxW="container.lg" py={{ base: 20, lg: 32 }}>
         <Stack spacing={12}>
           <FallInPlace>
-            <Heading
-              fontSize={['3xl', null, '5xl']}
-              lineHeight="short"
-              textAlign="center"
-            >
+            <Heading fontSize={['3xl', null, '5xl']} lineHeight="short" textAlign="center">
               Privacy Policy
             </Heading>
           </FallInPlace>
 
           <VStack spacing={10} align="start">
+            <Text color="muted">
+              This Privacy Policy explains how Networth Technologies Pvt. Ltd. (hereinafter, "we", "us", or "Networth") collects, uses, discloses, and secures information from or about you (hereinafter, "you" and "your" or "End User"). You can learn more about Networth’s Offering on our Website.
+            </Text>
+
+            <Text color="muted">
+              By accepting this Privacy Policy, or by accessing and/or using Networth’s Offering, you agree to be bound by this Privacy Policy. If you do not agree to (or cannot comply with) all of the terms set out under this Privacy Policy, you may not access or use Networth’s Offering. If you represent another Person, you hereby warrant that you have the authority, intention, and capacity to accept this Privacy Policy on behalf of such Person.
+            </Text>
+
+            <Text color="muted">
+              You authorize Networth and the applicable Client to act on your behalf to obtain, store, transmit, process, use, and disclose the information collected from or about you in accordance with this Privacy Policy.
+            </Text>
+
+            <Text color="muted">Please read this Privacy Policy carefully:</Text>
+
             <Box>
-              <Heading fontSize="xl" mb={2}>
-                Introduction
-              </Heading>
+              <Heading fontSize="xl" mb={2}>1. End User Agreement</Heading>
               <Text color="muted">
-                WYLD is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your data.
+                This Privacy Policy forms a part of the end user agreement available at (https://networth.com/terms.pdf) and must be read with the End User Agreement. Any capitalized terms that are not expressly defined in this Privacy Policy will have the meanings attributed to them in the End User Agreement.
               </Text>
             </Box>
 
             <Box>
-              <Heading fontSize="xl" mb={2}>
-                Information We Collect
-              </Heading>
-              <Text color="muted">
-                We may collect personal information such as your name, email address, and social media handles. We also collect analytics data to improve your experience.
-              </Text>
+              <Heading fontSize="xl" mb={2}>2. Certain Defined Terms</Heading>
+              <OrderedList color="muted">
+                <ListItem>"Privacy Policy" means this privacy policy.</ListItem>
+                <ListItem>"Minor" means an individual who is less than the minimum age prescribed under law to provide consent or to enter into contracts, provided that in no event will such age be less than 16 years.</ListItem>
+                <ListItem>"Person" means any individual, partnership, limited liability partnership, limited liability company, body corporate, corporation, association, society, trust, or other entity or organization, whether or not a juridical person.</ListItem>
+              </OrderedList>
             </Box>
 
             <Box>
-              <Heading fontSize="xl" mb={2}>
-                How We Use Your Information
-              </Heading>
-              <Text color="muted">
-                Your information is used to provide and enhance our services, analyze trends, and send you relevant updates. We never sell your personal data.
-              </Text>
+              <Heading fontSize="xl" mb={2}>3. What Information We Collect</Heading>
+              <OrderedList color="muted" spacing={3}>
+                <ListItem>
+                  <Text fontWeight="bold">Information provided to us by you:</Text>
+                  <UnorderedList pl={4} mt={2}>
+                    <ListItem>Identifiers and login information such as your username, password, or security token.</ListItem>
+                    <ListItem>Your name, phone number, email address, physical address, one-time password (OTP).</ListItem>
+                    <ListItem>Other details as may be necessary to provide any part of Networth’s Offering.</ListItem>
+                  </UnorderedList>
+                </ListItem>
+
+                <ListItem>
+                  <Text fontWeight="bold">Communication data:</Text>
+                  <Text>Includes username, email, date of birth, phone number when contacting customer support or interacting with our platforms.</Text>
+                </ListItem>
+
+                <ListItem>
+                  <Text fontWeight="bold">Additional data:</Text>
+                  <Text>We collect other data you provide us if you grant specific permissions.</Text>
+                </ListItem>
+
+                <ListItem>
+                  <Text fontWeight="bold">Acquired data:</Text>
+                  <UnorderedList pl={4} mt={2}>
+                    <ListItem>Identity details: full name, gender, contact information, profile details, and IDs.</ListItem>
+                    <ListItem>Network info: connections/followers, demographic and analytical data.</ListItem>
+                    <ListItem>Device data: IP address, browser/device info, time zone, and location.</ListItem>
+                    <ListItem>Client-provided data: name, phone number, address, email, zip code.</ListItem>
+                    <ListItem>Reputation metrics: follower counts, engagement stats, content metadata, feedback.</ListItem>
+                    <ListItem>Location history, as tracked by platforms.</ListItem>
+                  </UnorderedList>
+                </ListItem>
+              </OrderedList>
             </Box>
 
             <Box>
-              <Heading fontSize="xl" mb={2}>
-                Data Security
-              </Heading>
+              <Heading fontSize="xl" mb={2}>4. Cookies and Tracking Technologies</Heading>
               <Text color="muted">
-                We implement strong security measures to protect your data. All sensitive information is encrypted during transmission and storage.
-              </Text>
-            </Box>
-
-            <Box>
-              <Heading fontSize="xl" mb={2}>
-                Your Rights
-              </Heading>
-              <Text color="muted">
-                You can request access to your data, update it, or ask us to delete it at any time. Reach out to our support team to exercise your rights.
-              </Text>
-            </Box>
-
-            <Box>
-              <Heading fontSize="xl" mb={2}>
-                Changes to this Policy
-              </Heading>
-              <Text color="muted">
-                We may update this policy occasionally. We encourage you to review it regularly to stay informed about how we are protecting your data.
-              </Text>
-            </Box>
-
-            <Box>
-              <Heading fontSize="xl" mb={2}>
-                Contact Us
-              </Heading>
-              <Text color="muted">
-                If you have any questions about this policy, please contact us at privacy@wyldcard.com.
+                We also use cookies and similar tracking technologies to collect information. For more details about our use of cookies, please refer to our Cookie Policy.
               </Text>
             </Box>
           </VStack>
@@ -101,13 +108,3 @@ const PrivacyPolicy: NextPage = () => {
 }
 
 export default PrivacyPolicy
-// This code defines a Privacy Policy page using React and Chakra UI.
-// It includes sections on Introduction, Information We Collect, How We Use Your Information, Data Security, Your Rights, Changes to this Policy, and Contact Us.
-// Each section contains a heading and a description, styled with Chakra UI components.
-// The page is wrapped in a Box component with a background gradient and uses a Stack for layout.
-// The FallInPlace component is used for animation effects on the headings.
-// The page is exported as a Next.js page component.
-// The Privacy Policy is designed to inform users about how their data is handled and to ensure transparency in data practices.
-// The page is responsive and adjusts its layout based on the screen size.
-// The content is structured to provide clear and concise information, making it easy for users to understand their rights and the company's practices regarding data privacy.
-// The use of Chakra UI allows for a consistent design language and accessibility features.

@@ -41,7 +41,7 @@ import { FallInPlace } from '#components/motion/fall-in-place'
 import { Testimonials } from '#components/testimonials'
 import { Em } from '#components/typography'
 import testimonials from '#data/testimonials'
-import { Header } from '#components/layout/header' // Make sure this import exists
+import { Header } from '#components/layout/header'
 
 /**
  * Custom hook to track global scroll progress (from 0 to 1)
@@ -145,7 +145,7 @@ const useHeroAnimation = () => {
 const Home: NextPage = () => {
   return (
     <>
-      <Header /> {/* Add this if not present */}
+      <Header />
       <Box position="relative">
         {/* Background gradient and vertical animated lines */}
         <BackgroundGradient height="100%" zIndex="-3" />
@@ -165,7 +165,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <Box position="relative" overflow="hidden">
-      <Container maxW="container.xl" pt={{ base: 32, lg: 48 }} pb="40">
+      <Container maxW="container.xl" pt={{ base: '120px', lg: '140px' }} pb="40">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           <Hero
             id="home"
@@ -182,7 +182,7 @@ const HeroSection: React.FC = () => {
                   lineHeight="short"
                   fontSize={['3xl', null, '5xl']}
                 >
-                  WYLD – The World’s 1st Social Currency Card
+                  Networth – The World’s 1st Social Currency Card
                 </Heading>
               </FallInPlace>
             }
@@ -201,7 +201,7 @@ const HeroSection: React.FC = () => {
                   encash your influence and earn up to{' '}
                   <Em>100% cashback</Em> on your purchases.
                   <Br />
-                  Live the WYLD life.
+                  Live the Networth life.
                   <Br />
                 </Text>
               </FallInPlace>
@@ -217,9 +217,9 @@ const HeroSection: React.FC = () => {
             </FallInPlace>
           </Hero>
           <Box
-            height="400px"
+            height="300px"
             position="absolute"
-            top="90px"
+            top="170px"
             display={{ base: 'none', lg: 'block' }}
             left={{ lg: '60%', xl: '55%' }}
             width="80vw"
@@ -241,7 +241,7 @@ const HeroSection: React.FC = () => {
                   src="/static/images/influencer-main.jpg"
                   width={800}
                   height={200}
-                  alt="WYLD Social Currency Card in action"
+                  alt="Networth Social Currency Card in action"
                   quality="75"
                   priority
                   style={{ borderRadius: 'inherit' }}
@@ -256,13 +256,13 @@ const HeroSection: React.FC = () => {
 }
 
 const HighlightsSection = () => {
-  const { onCopy, hasCopied } = useClipboard('Join the WYLD waitlist now!')
+  const { onCopy, hasCopied } = useClipboard('Join the Networth waitlist now!')
   return (
     <Highlights>
       <HighlightsItem colSpan={[1, null, 2]} title="1000+ Followers?">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            All you need is 1000+ Instagram followers to <Em>#GETWYLD</Em>.
+            All you need is 1000+ Instagram followers to <Em>#GETNETWORTH</Em>.
             Turn your social influence into real cashback rewards.
           </Text>
 
@@ -299,7 +299,7 @@ const HighlightsSection = () => {
       </HighlightsItem>
       <HighlightsItem title="Encash Your Influence">
         <Text color="muted" fontSize="lg">
-          Shop your favorite brands with the WYLD card – give them a shout on
+          Shop your favorite brands with the Networth card – give them a shout on
           Instagram and earn instant cashback.
         </Text>
       </HighlightsItem>
@@ -318,28 +318,28 @@ const HighlightsSection = () => {
           zIndex="-1"
         >
           <Image
-        src="/static/images/lines.jpg"
-        alt="Testimonial background"
-        fill
-        style={{ objectFit: 'cover' }}
+            src="/static/images/lines.jpg"
+            alt="Testimonial background"
+            fill
+            style={{ objectFit: 'cover' }}
           />
         </Box>
         <VStack spacing="4" align="flex-start">
           <Text fontSize="xl" fontWeight="bold">
-        "WYLD transformed my social presence into real savings. It's the ultimate win‑win for influencers!"
+            "Networth transformed my social presence into real savings. It's the ultimate win‑win for influencers!"
           </Text>
           <VStack align="flex-start" spacing="1">
-        <Text fontWeight="bold">Alex Influencer</Text>
-        <Text fontSize="sm">Social Media Maven</Text>
+            <Text fontWeight="bold">Sarah, Influencer</Text>
+            <Text fontSize="sm">Social Media Maven</Text>
           </VStack>
         </VStack>
       </HighlightsItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Join the WYLD Revolution"
+        title="Join the Networth Revolution"
       >
         <Text color="muted" fontSize="lg">
-          More followers means more cashback – that’s the WYLD promise. Start your
+          More followers means more cashback – that’s the Networth promise. Start your
           journey with the world’s first social currency card.
         </Text>
         <Wrap mt="8">
@@ -387,14 +387,14 @@ const FeaturesSection = () => {
             textAlign="left"
             as="p"
           >
-            Why settle for ordinary? <Br /> Go WYLD!
+            Why settle for ordinary? <Br /> Go Networth!
           </Heading>
         }
         description={
           <>
             Discover the power of turning social influence into real rewards.
             <Br />
-            With the WYLD card, every like and share brings you closer to 100%
+            With the Networth card, every like and share brings you closer to 100%
             cashback.
           </>
         }
@@ -470,7 +470,7 @@ const TestimonialsSection = () => {
                   <Text fontSize="lg" fontWeight="bold">
                     {t.name || 'Influencer'}
                   </Text>
-                  <Text mt="2">{t.description || 'WYLD is amazing!'}</Text>
+                  <Text mt="2">{t.description || 'Networth is amazing!'}</Text>
                 </Box>
               ))}
             </Stack>

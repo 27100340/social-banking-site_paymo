@@ -1,40 +1,39 @@
 export default {
-  title: 'Loved by tech people',
+  title: 'Trusted by Pakistani Influencers',
   items: [
     {
-      name: 'Eelco Wiersma',
-      description: 'Founder Saas UI',
-      avatar:
-        'https://pbs.twimg.com/profile_images/1470742164024008706/k-eXHtu0_normal.jpg',
+      name: 'Dananeer Mobeen',
+      description: 'Content Creator & Social Media Influencer',
+      avatar: '/static/images/avatar1.jpg',
       children: (
         <>
-          “With SaaS UI I am able to produce high quality dashboard apps and
-          internal tools without a lot of design skills. The ROI really is
-          amazing.”
+          "NetWorth has revolutionized how I manage my earnings from social media. 
+          The cashback rewards are amazing, and the platform understands what 
+          creators like me really need!"
         </>
       ),
     },
     {
-      name: 'Caroline Yahaya',
-      description: 'Fullstack Developer',
+      name: 'Romaisa Khan',
+      description: 'Lifestyle & Fashion Influencer',
       avatar: '/static/images/avatar2.jpg',
       children: (
         <>
-          “Saas UI allows me to build beautiful and functional UI super fast.
-          The components are very well thought out and the Next.js starter kit
-          saved me at least 100 hours of work.”
+          "As someone with over 2M followers, I needed a banking solution that 
+          understood the creator economy. NetWorth not only gets it but rewards 
+          my influence with real cashback benefits!"
         </>
       ),
     },
     {
-      name: 'Alberto Vazquez',
-      description: 'Frontend Engineer',
+      name: 'Shahveer Jafry',
+      description: 'YouTuber & Digital Content Creator',
       avatar: '/static/images/avatar3.jpg',
       children: (
         <>
-          “Saas UI gave us a perfect starting point for our project, having the
-          storybooks already set up with beautifully crafted components and
-          fully mocked pages was a treat.”
+          "Finally, a financial platform that values social media influence! 
+          NetWorth has made it so much easier to monetize my following and earn 
+          rewards on every transaction. Game-changer for Pakistani creators!"
         </>
       ),
     },

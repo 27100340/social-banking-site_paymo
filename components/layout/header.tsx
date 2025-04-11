@@ -6,10 +6,10 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { useScroll } from 'framer-motion'
-
 import * as React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import { Logo } from './logo'
 import Navigation from './navigation'
 
 export interface HeaderProps extends Omit<BoxProps, 'children'> {}
@@ -43,20 +43,28 @@ export const Header = (props: HeaderProps) => {
       borderBottomWidth={y > height ? '1px' : ''}
       {...props}
     >
-      <Container maxW="container.2xl" px="8" py="4">
+      <Container maxW="container.xl" px="8" py="4">
         <Flex width="full" align="center" justify="space-between">
-          <Logo
-            onClick={(e) => {
-              if (window.location.pathname === '/') {
-                e.preventDefault()
-
-                window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth',
-                })
-              }
-            }}
-          />
+          <Link href="/" onClick={(e) => {
+            if (window.location.pathname === '/') {
+              e.preventDefault()
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+              })
+            }
+          }}>
+            <Image
+              src="/static/images/logo-transparent.png" // Update this path to match your logo file
+              alt="Site Logo"
+              width={120}
+              height={20}
+              style={{
+                objectFit: 'contain'
+              }}
+              priority
+            />
+          </Link>
           <Navigation />
         </Flex>
       </Container>
