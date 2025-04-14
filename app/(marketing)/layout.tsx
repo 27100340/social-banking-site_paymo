@@ -1,8 +1,13 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'WYLD - The Worlds 1st Social Currency Card',
-  description: 'Encash your influence with WYLD - Earn up to 100% cashback on your purchases.',
+  title: 'NetWorth - Earn up to 100% cashback on your purchases',
+  keywords: 'NetWorth, cashback, rewards, shopping, influencer marketing',
+  openGraph: {
+    title: 'NetWorth - Social Banking Platform',
+    description: 'Encash your influence with NetWorth - Earn up to 100% cashback on your purchases.',
+    type: 'website'
+  }
 }
 
 export default function MarketingLayout({
